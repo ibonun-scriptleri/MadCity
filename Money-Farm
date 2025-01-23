@@ -66,6 +66,7 @@ end)
 
 task.spawn(function() -- anti seat
     while true do
+        task.wait(1)
         local h = plr.Character:FindFirstChildOfClass("Humanoid")
         if h and h.Sit == true then
             h.Jump = true
